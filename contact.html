@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Festa 2022 - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Nunito Sans', sans-serif;
+
+    }
+    i{
+        color: #666;
+        font-size: 13px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 15px 250px;
+        position: sticky;
+        top: 0px;
+        background-color: rgba(255, 255, 255, 0.44);
+        backdrop-filter: blur(5px);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);
+        z-index: 2;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav h1 {
+
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: 100;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        width: 70px;
+        text-align: center;
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #register {
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: rgba(71, 71, 246, 0.714);
+    }
+
+    #register a {
+        color: white;
+        transition: color 0.1s ease-in;
+    }
+
+    #register a:hover {
+        color: black;
+    }
+
+    .bg {
+        height: 100vh;
+        background-image: url(images/bg_1.jpg);
+        background-size: cover;
+
+    }
+
+    .cont {
+
+        position: absolute;
+        top: 500px;
+        left: 200px;
+        z-index: 1;
+    }
+
+    .cont h1 {
+        color: #287ED9;
+        font-size: 70px;
+    }
+
+    .cont h4 {
+        color: #666;
+        letter-spacing: 1px;
+    }
+
+    .contactinf {
+        height: 150vh;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        padding: 10px 10%;
+    }
+
+    .heading {
+        font-size: 30px;
+        color: gray;
+        margin: 20px;
+    }
+
+    .heading2 {
+        color: rgb(61, 61, 61);
+        margin: 20px 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .box {
+        padding: 10px 20px;
+        margin: 10px;
+        width: 250px;
+
+    }
+
+    #map {
+        height: 50vh;
+        display: flex;
+    }
+
+    form {
+        width: 500px;
+        height: 582px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        background-color: #ffffff;
+        border-radius: 5px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    form input {
+        font-size: 20px;
+        padding: 5px 20px;
+        width: 350px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 2px solid grey;
+    }
+
+    textarea {
+        font-size: 20px;
+        padding: 5px 20px;
+        width: 350px;
+        resize: none;
+    }
+
+    #submit {
+        width: 400px;
+        transition: all 0.1s ease;
+    }
+
+    #submit:hover {
+        background-color: #287ED9;
+        color: white;
+    }
+
+    /* For map  */
+    .mapouter {
+        text-align: right;
+        height: 583px;
+        width: 724px;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 583px;
+        width: 724px;
+    }
+    footer {
+        color: white;
+        display: flex;
+        justify-content: center;
+        height: 70vh;
+        background-color: rgb(32, 30, 43);
+    }
+
+    footer div {
+
+        width: 300px;
+        margin: 80px 60px;
+
+
+    }
+
+    footer p a{
+        color: white;
+    }
+    #owner {
+        padding: 20px;
+        color: white;
+        text-align: center;
+        background-color: rgb(32, 30, 43);
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <nav>
+            <h1>IT-Festa-2022</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#itevent">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#abt">About</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li id="register"><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="cont">
+            <h1>Contact</h1>
+            <h4>Home <i class="fa-solid fa-chevron-right"></i> Contact <i class="fa-solid fa-chevron-right"></i></h4>
+        </div>
+    </div>
+
+
+    <div class="contactinf">
+        <h1 class="heading">Contact Information</h1>
+        <div class="container">
+            <div class="box">
+                <h4 class="heading2">Address :</h4>
+                <h4>INSTITUTE OF MANAGEMENT AND RESEARCH, <br> Pratap nagar, <br> Jalgaon, Maharashtra 425001,</h4>
+            </div>
+            <div class="box">
+                <h4 class="heading2">Phone :</h4>
+                <h4>Mrs.Tanhuja Fegade <br>
+                    +91-9860736351 <br><br>
+
+                    Phone : <br>
+                    Mr.Uday Chatur<br>
+                    +91-9834667622 </h4>
+            </div>
+            <div class="box">
+                <h4 class="heading2">Email :</h4>
+                <h4>info@imr.ac.in</h4>
+            </div>
+            <div class="box">
+                <h4 class="heading2">Website :</h4>
+                <h4>imr.ac.in</h4>
+            </div>
+        </div>
+        <div id="map">
+            <div class="mapp">
+                <div class="bg-white gmap_canvas"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14899.140058023497!2d75.5647547!3d21.0012532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fcace9cbfeb%3A0xdcef35650fe0354e!2sImr%20College!5e0!3m2!1sen!2sin!4v1649764540318!5m2!1sen!2sin"
+                        width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+
+            <form action="">
+                <h1 class="heading">Have Questions?</h1>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="" id="" cols="30" rows="5" placeholder="Message">
+
+                </textarea>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+
+    </div>
+    <footer>
+
+        <div>
+            <h3>IT-Festa-2022</h3>
+            <p>It-Festa-2022 is the 1​st​ National level ​Technical ​mega-event, which is the combination of
+                six wings. The Six Wings encourages students from various field such as Technology , Computer Science ,
+                Management , Commerce and many more to showcase and test their skillset on a national platform.</p>
+        </div>
+        <div>
+            <h3>Useful Links</h3>
+            <p> <a href="index.html#itevent">Event</a> <br>
+               <a href="sponsors.html">Sponsors</a> <br>
+                <a href="https://imr.ac.in/">IMR College Jalgaon</a></p>
+        </div>
+        <div>
+            <h3>Have Questions?</h3>
+            <p>  INSTITUTE OF MANAGEMENT AND RESEARCH, Pratap nagar, Jalgaon, Maharashtra 425001 <br><br>
+                MBA <br>
+                Dr.Parag Narkhede
+                +91-9422778876
+                <br><br>
+
+                MCA <br>
+                Mrs.Tanhuja Fegade
+                +91-9860736351<br>
+                <br>
+                
+                I-MCA <br>
+                Mr.Uday Chatur
+                +91-9834667622<br>
+                <br>
+
+                info@imr.ac.in <br>
+            </p>
+        </div>
+
+
+    </footer>
+    <div id="owner">
+        Copyright © All rights reserved | Designed with by
+        Vivek Patil
+    </div>
+</body>
+
+</html>
